@@ -70,6 +70,7 @@ class TargetCurrencyInput extends PureComponent {
                     value={this.props.targetCurrencyValue ? this.props.targetCurrencyValue : ''}
                     onChange={this.handleChange('targetValue')}
                     margin="normal"
+                    type="number"
                 />
             </form>
         );

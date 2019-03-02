@@ -29,13 +29,14 @@ class CurrencyConverterValue extends PureComponent {
 
     calculateTgtRate = () => {
         const {currencyConversionRate} = this.props;
-        let convertedTargetRate = parseFloat((this.props.srcCurrencyValue ? this.props.srcCurrencyValue : '') * currencyConversionRate);
+        let convertedTargetRate = (Math.round((this.props.srcCurrencyValue ? this.props.srcCurrencyValue : '') * currencyConversionRate * 10000) / 10000);
         this.props.changeTargetCurrencyValue(convertedTargetRate);
     };
 
     calculateSrcRate = () => {
         const {currencyConversionRate} = this.props;
-        const convertedTargetRate = parseFloat((this.props.tgtCurrencyValue ? this.props.tgtCurrencyValue : '') / currencyConversionRate);
+        const convertedTargetRate = (Math.round((this.props.tgtCurrencyValue ? this.props.tgtCurrencyValue : '') / currencyConversionRate * 10000) / 10000);
+        console.log(this.props.tgtCurrencyValue)
         this.props.changeSourceCurrencyValue(convertedTargetRate);
     };
 

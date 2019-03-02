@@ -69,6 +69,7 @@ class SourceCurrencyInput extends PureComponent {
                     value={this.props.sourceCurrencyValue ? this.props.sourceCurrencyValue : ''}
                     onChange={this.handleChange('sourceValue')}
                     margin="normal"
+                    type="number"
                 />
             </form>
         );

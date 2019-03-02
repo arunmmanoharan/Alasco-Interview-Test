@@ -72,6 +72,7 @@ class App extends Component {
                                         tgtCurrencyValue={tgtCurrencyValue}
                                         currencyConversionRate={currencyConversionRate}
                 />
+                <footer><a href={'https://currencyconverterapi.com'} target={'_blank'}>API from currencyconverterapi.com</a></footer>
             </div>
         );
     }
