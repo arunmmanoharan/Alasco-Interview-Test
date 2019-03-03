@@ -2,6 +2,7 @@
   "name": "currencyconverter",
   "version": "0.1.0",
   "private": true,
+  "author": "Arun Manohar",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "axios": "^0.18.0",
@@ -29,5 +30,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "jest-environment-enzyme": "^7.0.1",
+    "react-test-renderer": "^16.8.3",
+    "redux-mock-store": "^1.5.3"
+  }
 }

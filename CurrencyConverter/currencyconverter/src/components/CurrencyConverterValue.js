@@ -22,11 +22,6 @@ const styles = {
 
 class CurrencyConverterValue extends PureComponent {
 
-    state = {
-        conversionRate: 0
-    };
-
-
     calculateTgtRate = () => {
         const {currencyConversionRate} = this.props;
         let convertedTargetRate = (Math.round((this.props.srcCurrencyValue ? this.props.srcCurrencyValue : '') * currencyConversionRate * 10000) / 10000);
@@ -36,7 +31,6 @@ class CurrencyConverterValue extends PureComponent {
     calculateSrcRate = () => {
         const {currencyConversionRate} = this.props;
         const convertedTargetRate = (Math.round((this.props.tgtCurrencyValue ? this.props.tgtCurrencyValue : '') / currencyConversionRate * 10000) / 10000);
-        console.log(this.props.tgtCurrencyValue)
         this.props.changeSourceCurrencyValue(convertedTargetRate);
     };
 

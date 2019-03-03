@@ -38,7 +38,6 @@ class TargetCurrencyInput extends PureComponent {
 
     render() {
         const {classes} = this.props;
-        console.log(this.props.targetCurrencyValue);
 
         return (
             <form className={classes.container} noValidate autoComplete="off">
